@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>האתר בהקמה | IranTours</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      color: white;
-      background: linear-gradient(135deg, #222, #555);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.3em;
-      max-width: 600px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IranTours - האתר בהקמה</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(120deg, #1e1e1e, #333, #1e1e1e);
+    background-size: 300% 300%;
+    animation: gradientMove 6s infinite alternate;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
+  .flags {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .flag {
+    width: 70px;
+    height: 45px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #000;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .heart {
+    font-size: 2.5em;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); color: #ff4444; }
+    50% { transform: scale(1.2); color: #ff7777; }
+    100% { transform: scale(1); color: #ff4444; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+  }
+
+  p {
+    font-size: 1.2em;
+    max-width: 700px;
+  }
+</style>
 </head>
 <body>
+  <div class="flags">
+    <img src="https://flagcdn.com/w80/il.png" alt="Israel" class="flag">
+    <span class="heart">❤️</span>
+    <img src="https://flagcdn.com/w80/ir.png" alt="Iran" class="flag">
+  </div>
+
   <h1>האתר בהקמה</h1>
-  <p>ברוכים הבאים ל־IranTours. האתר שלנו נמצא בבנייה, נחזור אליכם בקרוב עם חוויה חדשה ומרגשת!</p>
+  <p>האתר שלנו נמצא בבנייה 🇮🇱❤️🇮🇷<br> 
+  נחזור אליכם בקרוב עם חוויה חדשה ומרגשת!</p>
 </body>
 </html>
