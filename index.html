@@ -1,89 +1,23 @@
-<!DOCTYPE html>
-<html lang="he">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IranTours - האתר בהקמה</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(120deg, #1e1e1e, #333, #1e1e1e);
-    background-size: 300% 300%;
-    animation: gradientMove 6s infinite alternate;
-  }
+<!doctype html>
 
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
+<html lang="he" dir="rtl">
 
-  .flags {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>IRAN · IL | בית דיגיטלי לישראלים ממוצא פרסי</title>
+    <meta name="description" content="בית דיגיטלי של זיכרון, תרבות, שורשים ותקווה — לישראלים ממוצא פרסי" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@300;400;600;700;900&family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./index-Dig8ou3r.js"></script>
+    <link rel="stylesheet" crossorigin href="./index-31qaBTbc.css">
+  </head>
 
-  .flag {
-    width: 70px;
-    height: 45px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px #000;
-    object-fit: cover;
-    animation: float 3s ease-in-out infinite;
-  }
+  <body>
+    <div id="root"></div>
+  </body>
 
-  .heart {
-    font-size: 2.5em;
-    animation: pulse 1.5s infinite;
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(1); color: #ff4444; }
-    50% { transform: scale(1.2); color: #ff7777; }
-    100% { transform: scale(1); color: #ff4444; }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  h1 {
-    font-size: 3em;
-    margin: 0.2em 0;
-  }
-
-  p {
-    font-size: 1.2em;
-    max-width: 700px;
-  }
-</style>
-</head>
-<body>
-  <div class="flags">
-    <img src="https://flagcdn.com/w80/il.png" alt="Israel" class="flag">
-    <span class="heart">❤️</span>
-    <img src="https://flagcdn.com/w80/ir.png" alt="Iran" class="flag">
-  </div>
-
-  <h1>האתר בהקמה</h1>
-  <p>האתר שלנו נמצא בבנייה 🇮🇱❤️🇮🇷<br> 
-  נחזור אליכם בקרוב עם חוויה חדשה ומרגשת!</p>
-</body>
 </html>
